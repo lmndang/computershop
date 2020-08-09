@@ -1,0 +1,444 @@
+/* ------------------------------------------------------
+Student Name:       Le Minh Nhat Dang
+Student Number:     138205190
+Seneca Email:       lmndang@myseneca.ca
+Assignment:         05
+File Name:          style.css
+Course  :           WEB222NBB
+Date Completed:     28/07/2020 (DD/MM/YYYY)
+-----------------------------------------------------------*/
+
+/* Import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/*
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto', sans-serif; 
+font-family: 'Amiri', serif;
+font-family: 'Krona One', sans-serif;
+font-family: 'Dancing Script', cursive;
+*/
+
+/****************************************************************************************************/
+/*********************************** Style first naviagtion bar *************************************/
+/****************************************************************************************************/
+body {
+  font-family: 'Kanit', sans-serif;
+  color: #8a8a8a;
+  background-color: #141414;
+  word-spacing: 3px;
+}
+
+#nav-wrap {
+  margin: 20px 120px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+#nav-wrap div a {
+  text-decoration: none;
+  color: #8a8a8a;
+}
+
+#logo-shop {
+  font-family: 'Dancing Script', cursive;
+  text-transform: capitalize;
+  font-size: 1.4em;
+}
+
+#nav-wrap div a:hover,
+#login div a:hover {
+  color: #f0f0f0d3;
+}
+
+#login {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+#flag {
+  margin-right: 10px;
+}
+
+/****************************************************************************************************/
+/*********************************** Style second naviagtion bar ************************************/
+/****************************************************************************************************/
+#menu-bar {
+  background: #212121;
+  text-align: center;
+}
+
+#menu-bar ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 90px 0 80px;
+  list-style: none;
+  margin: 0;
+}
+
+#menu-bar ul li {
+  text-transform: uppercase;
+  width: 150px;
+  margin: 20px 0;
+}
+
+#menu-bar ul li a {
+  text-decoration: none;
+  color: #8a8a8a;
+}
+
+#menu-bar ul li a:hover {
+  color: #f0f0f0d3;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+/****************************************************************************************************/
+/***************************************** Carousel styling *****************************************/
+/****************************************************************************************************/
+#slides {
+  text-align: center;
+  padding: 40px 120px;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.h2-carousel {
+  color: white;
+  font-size: 2.5em;
+  position: absolute;
+  font-family: 'Noto Serif', serif;
+  font-weight: 400;
+}
+
+#c-img3-h2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#c-img1-h2 {
+  bottom: 80px;
+  left: 60%;
+}
+
+#c-img2-h2 {
+  top: 80px;
+  left: 40%;
+}
+
+.img-source {
+  position: absolute;
+  margin: 0;
+  bottom: 8px;
+  left: 16px;
+  font-family: 'Noto Serif', serif;
+  font-size: 0.6em;
+  color: white;
+}
+
+/****************************************************************************************************/
+/****************************************** Filter Styling ******************************************/
+/****************************************************************************************************/
+#category {
+  width: 100%;
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.types {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  color: white;
+  border: 1.5px solid white;
+  height: 50px;
+  margin-right: 28px;
+}
+
+.types:hover {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+
+#select-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#select-box div {
+  margin-left: 20px;
+}
+
+#sorted {
+  border-radius: 4px;
+}
+
+/****************************************************************************************************/
+/******************************************* Main styling *******************************************/
+/****************************************************************************************************/
+main {
+  padding: 20px 94px;
+  font-family: 'Amiri', serif;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  flex-direction: row;
+}
+
+main .products {
+  position: relative;
+  width: 270px;
+  height: 430px;
+  border: 2px solid #212121;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.products img {
+  width: 237px;
+  height: 175px;
+  margin-top: 20px;
+}
+
+.products h4 {
+  margin-top: 25px;
+  color: #ffffff;
+  font-size: 1em;
+  font-family: 'Krona One', sans-serif;
+}
+
+.products p {
+  margin-top: 20px;
+  font-size: 0.8em;
+  word-spacing: 0px;
+}
+
+.products h6 {
+  font-size: 1.5em;
+  float: left;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #ffffffb4;
+}
+
+.products a {
+  position: absolute;
+  bottom: 30px;
+  left: 75px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 5px 7px;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #755bea, #ff72c0);
+  text-decoration: none;
+}
+
+#more {
+  width: 100%;
+  text-align: center;
+}
+
+#more a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border-radius: 6px;
+  padding: 10px 20px;
+  border: 1.5px solid white;
+}
+
+/****************************************************************************************************/
+/****************************************** Contact styling *****************************************/
+/****************************************************************************************************/
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+  background-color: #212121;
+  margin-top: 40px;
+  text-align: center;
+  height: 200px;
+  padding: 40px 120px;
+}
+
+#contact p {
+  text-align: left;
+  font-size: 1.2em;
+  margin-bottom: 27px;
+}
+
+#contact a {
+  margin-left: 20px;
+  color: #8a8a8a;
+}
+
+#Coppyright {
+  background-color: #212121;
+  text-align: center;
+  color: #8a8a8a;
+  height: 40px;
+}
+
+#contact-link {
+  display: flex;
+  align-items: flex-end;
+}
+
+#follow {
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+#cus-input {
+  display: flex;
+}
+
+#cus-input div {
+  margin-left: 10px;
+}
+
+label {
+  margin-top: 10px;
+  margin-left: -140px;
+  font-size: 1.2em;
+}
+
+#sub-btn {
+  background-color: #8a8a8a;
+}
+
+/****************************************************************************************************/
+/**************************************** Break-Point Styling ***************************************/
+/****************************************************************************************************/
+@media only screen and (max-width: 1250px) {
+  .types {
+    padding: 5px 10px;
+    border: 1.2px solid white;
+    height: 25px;
+    margin-right: 14px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  #nav-wrap {
+    margin: 20px 50px;
+  }
+
+  #category {
+    display: block;
+  }
+
+  #sub-cate {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .types {
+    text-align: center;
+    height: 36px;
+  }
+
+  #select-box {
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  #select-box h4 {
+    padding-top: 3px;
+    font-size: 1.3em;
+  }
+
+  #menu-bar .icon {
+    display: none;
+  }
+
+  #menu-bar ul {
+    padding: 0;
+  }
+
+  .h2-carousel {
+    font-size: 1.5em;
+  }
+
+  #slides {
+    padding: 0;
+  }
+
+  #c-img2-h2 {
+    top: 40px;
+    left: 36%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #contact {
+    padding: 40px 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #contact {
+    text-align: center;
+    height: 150px;
+    padding: 30px 20px;
+    justify-content: space-between;
+  }
+
+  #contact p {
+    text-align: left;
+    font-size: 0.9em;
+  }
+
+  #contact i {
+    font-size: 2em;
+  }
+
+  label {
+    margin-right: 50px;
+    font-size: 0.9em;
+  }
+
+  #off {
+    display: none;
+  }
+
+  #login {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+  }
+
+  #nav-wrap {
+    margin: 20px 40px 20px 50px;
+  }
+
+  #Coppyright {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 60px;
+  }
+}

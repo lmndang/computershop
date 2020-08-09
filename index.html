@@ -1,0 +1,366 @@
+<!--------------------------------------------------------
+Student Name:       Le Minh Nhat Dang
+Student Number:     138205190
+Seneca Email:       lmndang@myseneca.ca
+Assignment:         05
+File Name:          index.html
+Course  :           WEB222NBB
+Date Completed:     28/07/2020 (DD/MM/YYYY)
+------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Shop</title>
+    <!-- Bootstrap CDN v4.5 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Css stylesheet link -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/c6426d3c16.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <!-- First navigation bar -->
+      <nav id="nav-wrap">
+        <div><a id="logo-shop" href="#">Computer Shop</a></div>
+        <div id="login">
+          <div id="off"><img src="images/ca.png" alt="canada-flag" id="flag" />Canada</div>
+          <div><a href="#">Sign Up</a></div>
+          <div><a href="#">Sign In</a></div>
+        </div>
+      </nav>
+
+      <!-- Second navigation bar -->
+      <nav id="menu-bar">
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home icon"></i>Home</a>
+          </li>
+          <li id="menu-products">
+            <a href="#category"><i class="fas fa-laptop icon"></i>Products</a>
+          </li>
+          <li>
+            <a href="https://www.acer.com/ac/en/US/content/support" target="_blank"
+              ><i class="fab fa-servicestack icon"></i>Services</a
+            >
+          </li>
+          <li>
+            <a href="https://goo.gl/maps/dBmKR973E7at1R8r6" target="_blank"
+              ><i class="fas fa-search-location icon"></i>Locations</a
+            >
+          </li>
+          <li>
+            <a href="contact.html"><i class="fas fa-id-card icon"></i>Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Bootstrap carousel -->
+    <div id="slides">
+      <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="5000">
+            <img src="images/pc.jpg" class="d-block w-100" alt="pc-img" />
+            <h2 id="c-img1-h2" class="h2-carousel">Build your own future...</h2>
+            <p class="img-source">Photo by Artiom Vallat on Unsplash</p>
+          </div>
+          <div class="carousel-item" data-interval="5000">
+            <img src="images/laptop.jpg" class="d-block w-100" alt="laptop-img" />
+            <h2 id="c-img2-h2" class="h2-carousel">Be creative!!!</h2>
+            <p class="img-source">Photo by Nikolay Tarashchenko on Unsplash</p>
+          </div>
+          <div class="carousel-item" data-interval="5000">
+            <img src="images/keyboard.jpg" class="d-block w-100" alt="keyboard-img" />
+            <h2 id="c-img3-h2" class="h2-carousel">Find your best experience!!!</h2>
+            <p class="img-source">Photo by Mateo Vrbnjak on Unsplash</p>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Categories section -->
+    <div id="category">
+      <div id="sub-cate">
+        <a href="#" id="all" class="types">All</a>
+        <a href="#" id="laptop" class="types">Laptops</a>
+        <a href="#" id="desktop" class="types">Desktops</a>
+        <a href="#" id="monitor" class="types">Monitors</a>
+        <a href="#" id="thronos" class="types">Thronos</a>
+      </div>
+      <div id="select-box">
+        <div><h4>Sort By</h4></div>
+        <div>
+          <select name="sorting" id="sorted">
+            <option value="recommended">Recommended</option>
+            <option value="name-des">Brand Name A-Z</option>
+            <option value="name-asc">Brand Name Z-A</option>
+            <option value="price-asc">Price Low-High</option>
+            <option value="price-dec">Price High-Low</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products section -->
+    <main>
+      <div class="products">
+        <img src="images/p-lap1.png" alt="pc-img" />
+        <h4>Acer Predator Helios 300</h4>
+        <p>Model Name: PH315-52-78VL</p>
+        <h6>$1000.00</h6>
+        <a href="#">Add to Cart</a>
+      </div>
+      <div class="products">
+        <img src="images/p-lap2.png" alt="pc-img" />
+        <h4>Acer Predator Helios 300</h4>
+        <p>Model Name: PH317-52-74KR</p>
+        <h6>$1500.00</h6>
+        <a href="#">Add to Cart</a>
+      </div>
+      <div class="products">
+        <img src="images/p-lap3.png" alt="pc-img" />
+        <h4>Acer Predator Helios 300</h4>
+        <p>Model Name: PH317-52-77A4</p>
+        <h6>$1700.00</h6>
+        <a href="#">Add to Cart</a>
+      </div>
+      <div class="products">
+        <img src="images/p-lap4.png" alt="pc-img" />
+        <h4>Acer Predator Helios 300</h4>
+        <p>Model Name: PH315-52-72EV</p>
+        <h6>$1800.00</h6>
+        <a href="#">Add to Cart</a>
+      </div>
+      <div class="products">
+        <img src="images/p-lap5.png" alt="pc-img" />
+        <h4>Acer Predator Helios 500</h4>
+        <p>Model Name: PH517-51-79E8</p>
+        <h6>$1800.00</h6>
+        <a href="#">Add to Cart</a>
+      </div>
+      <div class="products">
+        <img src="images/p-lap6.png" alt="pc-img" />
+        <h4>Acer Predator Helios 700</h4>
+        <p>Model Name: PH717-71-75RX</p>
+        <h6>$2500.00</h6>
+        <a href="#">Add to Cart</a>
+      </div>
+      <div class="products">
+        <img src="images/p-lap7.png" alt="pc-img" />
+        <h4>Acer Predator Triton 300</h4>
+        <p>Model Name: PT315-52-7337</p>
+        <h6>$2000.00</h6>
+        <a href="#">Add to Cart</a>
+      </div>
+      <div class="products">
+        <img src="images/p-lap8.png" alt="pc-img" />
+        <h4>Acer Predator Triton 500</h4>
+        <p>Model Name: PT515-51-75BH</p>
+        <h6>$2200.00</h6>
+        <a href="#">Add to Cart</a>
+      </div>
+    </main>
+
+    <div id="more">
+      <a href="#">Show More...</a>
+    </div>
+
+    <!-- Contact information -->
+    <footer>
+      <div id="contact">
+        <div>
+          <p>Le Minh Nhat Dang</p>
+          <p>Email: lmndang@myseneca.ca</p>
+          <p>Phone Number: +1 437 333 5795</p>
+        </div>
+        <div>
+          <div id="contact-link">
+            <a target="_blank" href="https://github.com/lmndang"
+              ><i class="fab fa-github fa-3x"></i
+            ></a>
+            <a target="_blank" href="https://www.facebook.com/"
+              ><i class="fab fa-facebook fa-3x"></i
+            ></a>
+            <a target="_blank" href="https://lmndang.github.io/cv/"
+              ><i class="fas fa-globe-asia fa-3x"></i
+            ></a>
+          </div>
+
+          <div id="follow">
+            <label for="customer-email">Get our newsletter...</label>
+            <form name="subscribe" action="https://formspree.io/xrgyjwzn" method="POST">
+              <div id="cus-input">
+                <div class="form-group">
+                  <input
+                    id="customer-email"
+                    type="email"
+                    name="cus-email"
+                    autocomplete="email"
+                    placeholder="Enter your e-mail here"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <input id="sub-btn" type="submit" name="Submit" value="Subscribe" class="btn" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="Coppyright">
+        <p>Copyright &copy; 2020 Le Minh Nhat Dang</p>
+      </div>
+    </footer>
+
+    <!--
+      Introduction
+      ------------
+
+      You are asked to create an online store in HTML, CSS, and JavaScript.
+      Please implement a store with all of the following requirements.
+
+      You may remove this comment and place all your HTML in this file.
+
+      Requirements:
+
+      1. Include a header across the top with your store's name, a logo,
+      and use a different background colour, web font, etc. Your header should
+      include info about what the store is, what it sells, etc.  Use some images
+      to try and draw the user in. NOTE: place all your site's images in the
+      `src/images/` directory.
+
+      2. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. For example, if you are selling clothing, you might
+      have categories for Men, Women, and Children, and each category would have
+      its own set of items.  Each item should include:
+      
+        - a picture of the item
+        - the item's name or title
+        - a complete description of the item
+        - a category (i.e., each item must belong to one or more categories)
+        - a price in Canadian Dollars
+      
+      Each item should be its own "card" (i.e., some kind of box around each item
+      separating one from the next, with suitable whitespace between).
+
+      3. A category menu or "sidebar" (left, right, or top depending on your design)
+      showing the different categories of items in your store.  If a
+      user clicks on one of the categories, use CSS and JavaScript to hide all
+      other items in the store (i.e., only show items for the chosen category).
+      Make sure you include a way to return to seeing all categories, and make it
+      obvious to the user that they are only seeing a partial list of items when
+      you filter by category (i.e., use CSS and HTML to change things somehow).
+
+      4. Below the store items, a footer with the name of the store, any relevant
+      links you need to give users.  Include links and icons to any social media
+      for your store (Facebook, Twitter, etc). NOTE: you don't have to create such
+      accounts, but you can provide links to imaginary accounts.
+
+      5. Use at least two different Web Fonts for your store.  The titles should
+      be different from any regular text.  Use a free font service like
+      https://fonts.google.com/ or any other that you choose.  You can also
+      experiment with different font sizes and colours to draw attention toward
+      or away from various parts of your design.
+
+      6. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours (primary, secondary, accent), and use them throughout your site
+      for backgrounds, borders, fonts. Your store page needs to look attractive
+      and marks will be given for good a good looking site.  No one will buy from
+      a store that looks like its owners aren't professional or don't care about
+      details.  Also make sure that the colour contrast in your site is suitable
+      for everyone to read.
+
+      7. Use modern CSS to help you achieve your layout.  For example, Flexbox
+      and CSS Grid can help you create professional looking layouts.  Here
+      are some guides to get you started:
+
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+       
+      You are also welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      8. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them,
+      and include references to indicate where you got them. Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+
+      9. Make sure you reduce the download size of images you include in your
+      store.  Your images shouldn't be larger than 1M in size.  Users don't want to
+      download 10s or 100s of megabytes of data, especially on mobile.  You can use an
+      online tool like https://squoosh.app/ to help you reduce images.  You will
+      lose marks if your images aren't optimized for the web.
+
+      10. Make sure you have no JavaScript or other errors in your Dev Tools Console.
+      Run your site, and test all aspects of it with the Console open, and fix
+      any issues you encounter.
+
+      11. Make sure your code is properly indented and commented, and that you've used
+      good naming practices for variables, functions, ids, classes, etc.
+
+      12. Have fun!  Build something you'd be proud to show future employers in
+      interviews.  Take the time to properly design and implement a beautiful and
+      functional storefront.  Maybe it will inspire you to start your own online business?
+    -->
+
+    <!-- Bootstrap CDN v4.5 -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  Include javascript file -->
+    <script type="text/javaScript" src="products-data.js"></script>
+    <script type="text/javaScript" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,310 @@
+<!--------------------------------------------------------
+Student Name:       Le Minh Nhat Dang
+Student Number:     138205190
+Seneca Email:       lmndang@myseneca.ca
+Assignment:         Finall Assessment
+File Name:          contact.html
+Course  :           WEB222NBB
+Date Completed:     08/08/2020 (DD/MM/YYYY)
+------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <!-- Bootstrap CDN v4.5 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- Css stylesheet link -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="contact.css" type="text/css" />
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/c6426d3c16.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <!-- First navigation bar -->
+      <nav id="nav-wrap">
+        <div><a id="logo-shop" href="index.html">Computer Shop</a></div>
+        <div id="login">
+          <div id="off"><img src="images/ca.png" alt="canada-flag" id="flag" />Canada</div>
+          <div><a href="#">Sign Up</a></div>
+          <div><a href="#">Sign In</a></div>
+        </div>
+      </nav>
+
+      <!-- Second navigation bar -->
+      <nav id="menu-bar">
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-home icon"></i>Home</a>
+          </li>
+          <li id="menu-products">
+            <a href="index.html"><i class="fas fa-laptop icon"></i>Products</a>
+          </li>
+          <li>
+            <a href="https://www.acer.com/ac/en/US/content/support" target="_blank"
+              ><i class="fab fa-servicestack icon"></i>Services</a
+            >
+          </li>
+          <li>
+            <a href="https://goo.gl/maps/dBmKR973E7at1R8r6" target="_blank"
+              ><i class="fas fa-search-location icon"></i>Locations</a
+            >
+          </li>
+          <li>
+            <a href="contact.html"><i class="fas fa-id-card icon"></i>Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="con-main">
+      <!-- Tilte -->
+      <h3>Fill out the form below</h3>
+      <p>(the more details the better) and let see if we can help you.</p>
+
+      <!-- Main Form -->
+      <div class="container" id="form-box">
+        <form action="https://httpbin.org/post" method="POST">
+          <!-- Name -->
+          <div class="row">
+            <label class="col-4" for="cus-name">* Name:</label>
+            <input
+              class="col-8"
+              id="cus-name"
+              type="text"
+              name="name"
+              tabindex="1"
+              autofocus
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <!-- Email Address -->
+          <div class="row">
+            <label class="col-4" for="cus-email">* Email Address:</label>
+            <input
+              class="col-8"
+              id="cus-email"
+              type="email"
+              name="email"
+              tabindex="2"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <!-- Address -->
+          <div class="row">
+            <label class="col-4" for="cus-address">Address:</label>
+            <input
+              class="col-8"
+              id="cus-address"
+              type="text"
+              name="address"
+              tabindex="3"
+              autocomplete="address-level3"
+            />
+          </div>
+
+          <!-- City (use a <datalist> for autocomplete of common Canadian cities) -->
+          <div class="row">
+            <label class="col-4" for="cus-city">City:</label>
+            <select
+              class="col-8"
+              name="City"
+              id="cus-city"
+              autocomplete="address-level2"
+              tabindex="4"
+            >
+              <option selected>....</option>
+              <option>Toronto</option>
+              <option>Mississauga</option>
+              <option>London</option>
+              <option>Ottawa</option>
+              <option>Hamilton</option>
+              <option>Windsor</option>
+              <option>Kitchener</option>
+            </select>
+          </div>
+
+          <!-- Postal Code -->
+          <div class="row">
+            <label class="col-4" for="cus-postal">Postal Code:</label>
+            <input
+              class="col-8"
+              id="cus-postal"
+              type="text"
+              name="postal-code"
+              tabindex="5"
+              autocomplete="postal-code"
+              pattern="^[A-Za-z]\d[A-Za-z][ ]?\d[A-Za-z]\d$"
+              placeholder="M6E 3U7"
+            />
+          </div>
+
+          <!-- Radio Options to specify what this is about -->
+          <div class="row" id="form-radio">
+            <div class="col-4" class="form-check" id="form-radio">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radio-selected"
+                id="question-type"
+                value="question"
+                checked
+              />
+              <label class="form-check-label" for="question-type">
+                Question
+              </label>
+            </div>
+
+            <div class="col-4" class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radio-selected"
+                id="comment-type"
+                value="comment"
+              />
+              <label class="form-check-label" for="comment-type">
+                Comment
+              </label>
+            </div>
+
+            <div class="col-4" class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radio-selected"
+                id="other-type"
+                value="other"
+              />
+              <label class="form-check-label" for="other-type">
+                Other
+              </label>
+            </div>
+          </div>
+
+          <div id="other"></div>
+
+          <!-- A large area to enter the message that customers want to send -->
+          <div class="row">
+            <label class="col-4" for="cus-feedback">* Description</label>
+            <textarea
+              class="col-8"
+              id="cus-feedback"
+              name="description"
+              cols="60"
+              rows="5"
+              tabindex="8"
+              required
+            ></textarea>
+          </div>
+
+          <!-- A hidden input field with my name -->
+          <div id="seneca" class="row">
+            <label class="col-4" for="my-name">* Full Name</label>
+            <input
+              class="col-8"
+              type="text"
+              name="student-name"
+              id="my-name"
+              value="Le Minh Nhat Dang"
+            />
+          </div>
+
+          <div class="row">
+            <input
+              class="col-8 btn"
+              type="submit"
+              name="cus-submit"
+              id="submit"
+              value="Submit"
+              tabindex="9"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div id="contact">
+        <div>
+          <p>Le Minh Nhat Dang</p>
+          <p>Email: lmndang@myseneca.ca</p>
+          <p>Phone Number: +1 437 333 5795</p>
+        </div>
+        <div>
+          <div id="contact-link">
+            <a target="_blank" href="https://github.com/lmndang"
+              ><i class="fab fa-github fa-3x"></i
+            ></a>
+            <a target="_blank" href="https://www.facebook.com/"
+              ><i class="fab fa-facebook fa-3x"></i
+            ></a>
+            <a target="_blank" href="https://lmndang.github.io/cv/"
+              ><i class="fas fa-globe-asia fa-3x"></i
+            ></a>
+          </div>
+
+          <div id="follow">
+            <label for="customer-email">Get our newsletter...</label>
+            <form name="subscribe" action="https://formspree.io/xrgyjwzn" method="POST">
+              <div id="cus-input">
+                <div class="form-group">
+                  <input
+                    id="customer-email"
+                    type="email"
+                    name="cus-email"
+                    autocomplete="email"
+                    placeholder="Enter your e-mail here"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <input id="sub-btn" type="submit" name="Submit" value="Subscribe" class="btn" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="Coppyright">
+        <p>Copyright &copy; 2020 Le Minh Nhat Dang</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap CDN v4.5 -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
