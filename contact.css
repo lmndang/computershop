@@ -63,3 +63,25 @@ Date Completed:     08/08/2020 (DD/MM/YYYY)
 #seneca {
   display: none;
 }
+
+@media only screen and (max-width: 400px) {
+  #con-main {
+    padding: 40px 20px 0 20px;
+  }
+
+  #con-main h3 {
+    font-size: 1.4em;
+  }
+
+  #con-main p {
+    font-size: 0.8em;
+  }
+
+  #form-box {
+    margin-left: 40px;
+  }
+
+  #form-radio {
+    margin-left: -60px;
+  }
+}
