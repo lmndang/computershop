@@ -442,3 +442,49 @@ label {
     height: 60px;
   }
 }
+
+/* Phone Devices */
+@media only screen and (max-width: 400px) {
+  #nav-wrap {
+    margin: 20px 20px;
+  }
+
+  #login {
+    word-spacing: 0.1em;
+    margin-top: 6px;
+    width: 130px;
+  }
+
+  #menu-bar {
+    font-size: 0.8em;
+  }
+
+  #category #sub-cate {
+    font-size: 0.7em;
+    margin-left: 6px;
+  }
+
+  #category #sub-cate a {
+    padding-top: 8px;
+  }
+
+  #category #select-box {
+    font-size: 0.7em;
+    width: 300px;
+    margin-right: 0px;
+  }
+
+  #contact {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #Coppyright {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  #follow label {
+    margin-left: -10px;
+  }
+}
