@@ -444,7 +444,7 @@ label {
 }
 
 /* Phone Devices */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   #nav-wrap {
     margin: 20px 20px;
   }
@@ -486,6 +486,6 @@ label {
   }
 
   #follow label {
-    margin-left: -10px;
+    margin-left: -70px;
   }
 }
