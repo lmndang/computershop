@@ -64,7 +64,7 @@ Date Completed:     08/08/2020 (DD/MM/YYYY)
   display: none;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   #con-main {
     padding: 40px 20px 0 20px;
   }
